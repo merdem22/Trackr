@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title%} Home {% endblock%}
+
+{% block main %}
+
+
+<form action="/exercises" method="post">
+    <div class="mb-3">
+    <input id="exercisesbutton" class="btn btn-primary" type="submit" value="Exercises">
+    </div>
+  </form>
+
+
+<form action="/create_workout" method="post">
+  <div class="mb-3">
+  <input id="create_workout_button" class="btn btn-primary" type="submit" value="Create Workout">
+  </div>
+</form>
+
+
+
+
+{% endblock %}

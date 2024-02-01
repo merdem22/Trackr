@@ -1,0 +1,31 @@
+{% extends "layout.html"%}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block main %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="Trackr_position.">
+<h1 id=Trackr_header> <em><b>Trackr.</b></em></h1>
+</div>
+<br>
+<h2 class="floating-left-header"> <b> Stay Motivated.<br> Track Your Performance.<br>Push New Limits.</b></h2>
+<br>
+<br>
+<div style="clear: both;"></div>
+<div id="img_container">
+<img id="trackr_images" src="static/images/trackr (2).png"/>
+</div>
+<form action="/login" method="get">
+    <div class="mb-3">
+        <input id="welcome_button" class="btn btn-primary" type="submit" value="START NOW">
+
+    </div>
+</form>
+
+{% endblock %}

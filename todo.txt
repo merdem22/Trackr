@@ -1,0 +1,20 @@
+
+Creating a workout
+I have a list of list with 4 elements(user_id ,exercise_id, name sets reps)
+i should create a two seperate sql tables
+
+workout ownership table
+(user_id workout_id)
+
+workouts table
+(workout id, exercise id, user id, sets reps).
+
+
+Implement the ability to have names for the exercises.
+
+
+2-Create an exercise database
+2-Add the feature to add exercises to the account.
+3-Create the ability have workouts and workout history
+4-The ability to track your progress.
+5-accidentally messed up the create workouts html

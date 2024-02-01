@@ -1,0 +1,48 @@
+{% extends "layout.html"%}
+
+{% block title %}
+Do Workout
+{% endblock %}
+
+{% block main %}
+<h1 id="workout_header" style="text-align:center;color:black;"><em>Workout</em></h1>
+
+
+
+<!--exercise table-->
+<table class="table table-hover">
+
+    <tr id="table_row_1">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Target</th>
+      <th scope="col">Sets</th>
+      <th scope="col">Reps</th>
+      <th scope="col">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <form action="/workout/{{ workout_id }}" method="post">
+    {% for exercise in exercises %}
+    <tr>
+      <th scope="row">{{ exercise.id }}</th>
+      <td>{{ exercise.name }}</td>
+      <td>{{ exercise.target }}</td>
+      <td>  <input autocomplete="off" autofocus class="form-control" id="sets_{{ exercise.id }}" name="sets_{{ exercise.id }}" placeholder="Enter performed sets" type="text"></td>
+      <td>  <input autocomplete="off" autofocus class="form-control" id="reps_{{ exercise.id }}" name="reps_{{ exercise.id }}" placeholder="Enter performed reps per set" type="text"></td>
+      <td>  <input autocomplete="off" autofocus class="form-control" id="weight_{{ exercise.id }}" name="weight_{{ exercise.id }}" placeholder="Enter weight(kg)" type="text"></td>
+    </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+<button type="submit" class="btn btn-primary" style="background-color:crimson;text-align:center;display:block;margin:0 auto;height:50px;width:200px;">Record Workout</button>
+</form>
+<!--table ends-->
+
+<!--table ends-->
+
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "layout.html"%}
+
+{% block title %}
+Exercises
+{% endblock %}
+
+{% block main %}
+
+
+<h2 style="text-align:center;">Create Workout</h2>
+
+
+
+<!--exercise table-->
+<table class="table table-hover">
+
+    <tr id="table_row_1">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Target</th>
+      <th scope="col">Add to exercise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <form action="/create_workout" method="post">
+    {% for dict in exercise_dicts %}
+    <tr>
+      <th scope="row">{{ dict.id }}</th>
+      <td>{{ dict.name }}</td>
+      <td>{{ dict.target }}</td>
+      <td><input type="checkbox" name="exercise_id" value="{{ dict.id }}"></td>
+    </tr>
+    {% endfor %}
+      <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="workout_name" name="workout_name" placeholder="Workout Name" type="text" style="margin-bottom:10px;">
+        <button id="creating_workout_button" type="submit" class="btn btn-primary" style="background-color: #68bc46; text-align: center;">Create Workout With Selected Exercises</button>
+      </div>
+
+  </tbody>
+</table>
+
+
+</form>
+<!--table ends-->
+
+<!--table ends-->
+
+
+
+{% endblock %}

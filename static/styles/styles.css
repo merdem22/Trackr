@@ -1,0 +1,121 @@
+
+#login_header{
+
+    color: black;
+    text-align: center;
+}
+
+#register_header{
+    color: black;
+    text-align: center;
+    margin:10px;
+}
+
+#loginbutton{
+    text-align: center;
+    background-color: #8ade68;
+    display: block; /* Ensure the button is a block-level element */
+    margin: 0 auto; /* Set margins to auto to center horizontally */
+}
+
+#exercisesbutton{
+    text-align: center;
+    background-color: #8ade68;
+    display: block; /* Ensure the button is a block-level element */
+    margin: 0 auto; /* Set margins to auto to center horizontally */
+}
+
+#create_workout_button{
+    text-align: center;
+    background-color: #8ade68;
+    display: block; /* Ensure the button is a block-level element */
+    margin: 0 auto; /* Set margins to auto to center horizontally */
+}
+
+
+#flash_div
+{
+    background-color: #8ade68;
+    color: white;
+}
+
+#search_ex{
+    width
+}
+
+#tr-headers{
+    background-color: #8ade68;
+    color: white;
+}
+
+#table_row_1{
+    background-color: #8ade68;
+    color: white;
+}
+
+
+.floating-left-header{
+    float: left;
+    color: #8ade68;
+    margin: 20px;
+    margin-left: 100px;
+
+}
+
+#welcome_button{
+    width: 240px;
+    height: 40px;
+    margin-left:105px;
+    background-color: black;
+    color: white;
+}
+
+#tracker_header{
+    text-align: center;
+    color: #8ade68;
+    margin: 10px;
+}
+
+#creating_workout_button{
+    text-align: center;
+    background-color: #8ade68;
+    display: block; /* Ensure the button is a block-level element */
+    margin: 0 auto; /* Set margins to auto to center horizontally */
+}
+
+
+#img_container{
+     background-color: black;
+     border-radius: 10px;
+     overflow: hidden;
+     float:right;
+     height: 600px;
+     width: 700px;
+     margin-right: 150px;
+     margin-top: -250px;
+     position: relative;
+ }
+
+
+#trackr_images{
+    /*float:right;*/
+    position: absolute;
+    top: 0px;
+    left: -182px;
+    max-width: 170%;
+    height: auto;
+    margin-right: 250px;
+}
+
+
+
+#Trackr_header{
+    margin-bottom: -45px;
+    margin-left: 100px;
+
+}
+
+
+
+
+
